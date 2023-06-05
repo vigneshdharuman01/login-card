@@ -1,0 +1,140 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height:100vh;
+}
+.card-layer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rebeccapurple; */
+  height: 100%;
+}
+.card{
+  width: 500px;
+  height: 300px;
+  background: skyblue;
+  border-radius:1rem;
+  box-shadow: 3px 5px  25px black;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-between;
+}
+.row1 .col1{
+  padding-left: 2rem;
+}
+.row1 .col2{
+  padding-right:2rem;
+  padding-top: 1rem;
+}
+
+
+.row2{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.row2 .sim{
+font-size: 4rem;
+padding-left: 1.5rem;
+}
+.row2 .wifi{
+  font-size: 3rem;
+  padding-right: 2.5rem;
+}
+
+
+.row3{
+  text-align: center;
+}
+.row3 p{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.row3 input{
+  font-size: 20px;
+  font-weight: 500;
+  width: 70px;
+  letter-spacing: 2px;
+  background: transparent;
+  border-style: none;
+  
+}
+
+
+
+.row4 p{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 425px) and (max-width:520px) {
+  .card{
+      width:400px;
+      height: 250px;
+      background:yellow;
+  }
+  .row4 p{
+      margin-top:.8rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width:424px) {
+  .card{
+      width:350px;
+      height: 225px;
+      background:yellow;
+  }
+  .row4 p{
+      margin-top:.8rem;
+  }
+  .row4 p{
+      font-size: 20px;
+  }
+  .row3 p{
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+  }
+  .row2{
+      padding-top: 1.5rem;
+  }
+}
+@media only screen and (max-width: 373px)  {
+  .card{
+      width:300px;
+      height: 200px;
+      background:yellow;
+  }
+  .row4 p{
+      margin-top:.5rem;
+  }
+  .row4 p{
+      margin-top: 1rem;
+      font-size: 15px;
+  }
+  .row3 p{
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 1px;
+  }
+  .row2{
+      padding-top: 1rem;
+  }
+  .row2 .sim{
+      font-size: 3rem;
+  }
+  .row2 .wifi{
+      font-size: 1.2rem;
+      padding-top:18px;
+  }
+}
